@@ -1,0 +1,25 @@
+import React from "react";
+import styles from "./Home.module.css";
+import Section2 from "./components/section2/Section2";
+import Products from "./components/product/products";
+const Home = () => {
+  return (
+    <div>
+      <section className={styles.section1}>
+        <div className={styles.section1text}>
+          <h2>Men New-Season</h2>
+          <h1>Jackets Coats</h1>
+          <div>
+            <button>Shop Now</button>
+          </div>
+        </div>
+      </section>
+      <Section2 />
+      <section className={styles.section3}>
+        <Products />
+      </section>
+    </div>
+  );
+};
+
+export default Home;

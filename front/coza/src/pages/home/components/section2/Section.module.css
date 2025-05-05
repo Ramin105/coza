@@ -1,0 +1,27 @@
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.cards{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card{
+    position: relative;
+    display: flex;
+    justify-content:start;
+    align-items: flex-start;
+    width: 32%;
+    img{
+        width: 100%;
+    }
+}
+.cardtext{
+    position: absolute;
+    top: 30px;
+}
