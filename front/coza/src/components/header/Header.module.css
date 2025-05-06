@@ -3,9 +3,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-background-color: transparent;
+background-color: white;
 position: fixed;
 z-index: 99;
+}
+.header.scrolled{
+    background-color: white;
 }
 .header{
     width: 70%;
@@ -32,4 +35,16 @@ gap: 50px;
     display: flex;
     align-items: center;
     gap: 10px;
+}
+@media screen and (max-width:568px) {
+    
+    .header{width: 100%;
+    }
+   .navbar{
+    display: none;
+   }
+   .container{
+    background-color: white;
+    
+   }
 }

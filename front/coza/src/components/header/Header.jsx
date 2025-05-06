@@ -2,7 +2,10 @@ import React from "react";
 import styles from "./Header.module.css";
 import { FaSearch, FaShoppingCart } from "react-icons/fa";
 import { MdFavorite } from "react-icons/md";
+import { useNavigate } from "react-router";
+
 const Header = () => {
+  const navigate = useNavigate();
   return (
     <div className={styles.container}>
       <div className={styles.header}>
@@ -14,16 +17,18 @@ const Header = () => {
             />
           </div>
           <div className={styles.navbar}>
-            <button>Home</button>
+            <button onClick={() => navigate("/")}>Home</button>
             <button>Shop</button>
             <button>Features</button>
             <button>Blog</button>
             <button>About</button>
-            <button>Contact</button>
+            <button onClick={() => navigate("/Admin")}>Contact</button>
           </div>
         </div>
         <div className={styles.icons}>
-          <FaSearch /><FaShoppingCart/><MdFavorite />
+          <FaSearch />
+          <FaShoppingCart onClick={() => navigate("/basket")} />
+          <MdFavorite />
         </div>
       </div>
     </div>

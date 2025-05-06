@@ -25,3 +25,14 @@
     position: absolute;
     top: 30px;
 }
+@media screen and (max-width:568px) {
+ .cards{
+    flex-direction: column;
+    width: 100%;
+ }   
+ .container{width: 100%;}
+ .card{
+    width: 90%;
+   
+ }
+}
